@@ -1,6 +1,8 @@
 import React from 'react';
 import Itsme from '../images/Itsme.png'
 import {
+  FaFacebookF,
+  FaInstagram,
   FaLinkedin,
   FaStackOverflow,
   FaTwitter,
@@ -42,14 +44,12 @@ const About = () => {
             <img src={Itsme} alt="Nadeem Khan"/>
           </div>
           <h1>
-            <a href="https://www.linkedin.com/in/nadeemkhanrtm/" target="_nadeem" className="a" 
-            rel="external nofollow"  ><FaLinkedin/></a>
-            <a href="https://github.com/nadeemkhanrtm1" target="_nadeem" className="a"
-            rel="external nofollow" ><FaGithub/></a>
-            <a href="https://stackoverflow.com/users/11732103/nadeem-khan" target="_nadeem" className="a"
-            rel="external nofollow" ><FaStackOverflow/></a>
-            <a href="https://twitter.com/nadeemkhanrtm" target="_nadeem" className="a"
-            rel="external nofollow" ><FaTwitter/></a>
+            <a href="https://www.linkedin.com/in/nadeemkhanrtm/" target="_nadeem" className="a"><FaLinkedin/></a>
+            <a href="https://github.com/nadeemkhanrtm1" target="_nadeem" className="a"><FaGithub/></a>
+            <a href="https://stackoverflow.com/users/11732103/nadeem-khan" target="_nadeem" className="a"><FaStackOverflow/></a>
+            <a href="https://twitter.com/nadeemkhanrtm" target="_nadeem" className="a"><FaTwitter/></a>
+            <a href="https://www.instagram.com/i_nadeemkhan/?hl=en" target="_nadeem" className="a"><FaInstagram/></a>
+            <a href="https://www.facebook.com/nadeekhanrtm" target="_nadeem" className="a"><FaFacebookF/></a>
           </h1>
         </div>
         <div className="introduction">
@@ -66,7 +66,7 @@ const About = () => {
             with my family.
           </p>
           <div className='btn-div'>
-            <a href={Resume} download><button>Resume Here</button></a>
+            <a href={Resume} download><button>Download File</button></a>
             <Link to="/contact"><button>Hire Me</button></Link>
           </div>
 

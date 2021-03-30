@@ -42,28 +42,46 @@ const Service = () => {
           <div className="sr-card-1">
             <img src={Development} className="a" alt="Development"/>
             <h2>Development</h2>
+            <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying
+              out print, graphic or web designs. The passage is attributed to an unknown
+              typesetter.</p>
           </div>
           <div className="sr-card-2">
             <img src={Integration} alt="API Integration" className="a"/>
             <h2>API's Integration</h2>
+            <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying
+              out print, graphic or web designs. The passage is attributed to an unknown
+              typesetter.</p>
           </div>
           <div className="sr-card-3">
             <img src={MobileFrndly} alt="Responsive Design" className="a"/>
             <h2>Mobile Friendly Design</h2>
+            <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying
+              out print, graphic or web designs. The passage is attributed to an unknown
+              typesetter.</p>
           </div>
         </div>
         <div className="sr-row-2">
           <div className="sr-card-4">
             <img src={Management} alt="Management" className="a"/>
-            <h2>Hosting</h2>
+            <h2>Component Managment</h2>
+            <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying
+              out print, graphic or web designs. The passage is attributed to an unknown
+              typesetter.</p>
           </div>
           <div className="sr-card-5">
             <img src={CodeClean} alt="Code clean" className="a"/>
             <h2>Code Redundant</h2>
+            <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying
+              out print, graphic or web designs. The passage is attributed to an unknown
+              typesetter.</p>
           </div>
           <div className="sr-card-6">
             <img src={Animation} alt="animation" className="a"/>
             <h2>Animations</h2>
+            <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying
+              out print, graphic or web designs. The passage is attributed to an unknown
+              typesetter.</p>
           </div>
         </div>
       </div>

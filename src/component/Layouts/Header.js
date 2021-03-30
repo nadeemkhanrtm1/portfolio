@@ -4,7 +4,7 @@ import Menu from './Menu';
 
 const Header = () => {
   const [render,
-    setRender] = useState(false);
+    setRender] = useState();
   return (
     <header>
       <nav>
@@ -23,12 +23,16 @@ const Header = () => {
             distance="lg"
             duration="0.5"
             rounded
-            toggled={render}
-            toggle={()=>setRender(!render)}
-          />
+            onToggle={toggled => {
+            if (toggled) {
+              setRender(toggled)
+            } else {
+              setRender(toggled)
+            }
+          }}/>
         </div>
       </nav>
-      {render ? <Menu render={render} setRender={setRender}/> : null}
+      {render ? <Menu/> : null}
     </header>
   )
 }

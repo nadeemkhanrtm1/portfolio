@@ -92,7 +92,7 @@ const Contact = () => {
         </div>
         <div className="ct-card-1">
           <a href="https://goo.gl/maps/zxx2YmKo5SJBTUuJ8" target="_nadeem"><GoLocation className="mobile-icon"/></a>
-          <h2>Address</h2>
+          <h2>Phone</h2>
           <a
             href="https://goo.gl/maps/zxx2YmKo5SJBTUuJ8"
             target="_nadeem"
