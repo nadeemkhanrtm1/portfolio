@@ -1,0 +1,25 @@
+{
+  "short_name": "Nadeem Khan",
+  "name": "Nadeem Khan Portfolio",
+  "icons": [
+    {
+      "src": "Nadeem.png",
+      "sizes": " 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "Nadeem.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "Nadeem.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
