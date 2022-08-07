@@ -3,8 +3,18 @@ import {Squash as Hamburger} from 'hamburger-react';
 import Menu from './Menu';
 
 const Header = () => {
-  const [render,
-    setRender] = useState();
+  const [render,setRender] = useState(true);
+
+  const ontoggle = () => {
+    // setRender(!render)
+    if(render){
+      setRender(false)
+      document.body.style.overflow = "hidden";
+      }else{
+      setRender(true)
+      document.body.style.overflow = "initial"
+      }
+  }
   return (
     <header>
       <nav>
@@ -23,18 +33,31 @@ const Header = () => {
             distance="lg"
             duration="0.5"
             rounded
-            onToggle={toggled => {
-            if (toggled) {
-              setRender(toggled)
-            } else {
-              setRender(toggled)
-            }
-          }}/>
+            toggled={!render}
+            toggle ={ ontoggle }/>
+        
+
         </div>
       </nav>
-      {render ? <Menu/> : null}
+      {!render ? <Menu closeMenuProps={ontoggle}/> : null}
     </header>
   )
 }
 
 export default Header
+
+
+{/* 
+function Menu() {
+  const [showMenu, setMenu] = useState();
+
+  function display() {
+    const setMenu = () => {
+      let toggle = document.querySelector(".topnav");
+      if (toggle.className === "topnav") {
+        toggle.className += " responsive";
+      } else {
+        toggle.className = "topnav";
+      }
+    };
+  } */}

@@ -3,7 +3,7 @@ import React from 'react'
 const Education = () => {
   return (
     <React.Fragment>
-      {/* code for graducation */}
+      {/* code for graduation */}
 
       <div className="education-page-1">
         <div className="ed-flexbox-11">
