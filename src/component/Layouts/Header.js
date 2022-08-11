@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
-import {Squash as Hamburger} from 'hamburger-react';
+import {Divide as Hamburger} from 'hamburger-react';
 import Menu from './Menu';
+import { Link } from 'react-router-dom'
+
 
 const Header = () => {
   const [render,setRender] = useState(true);
@@ -19,19 +21,21 @@ const Header = () => {
     <header>
       <nav>
         <h1>
+        <Link to="/" className="">   
           <span className="emoji">N</span>
           <span className="emoji">a</span>
           <span className="emoji">d</span>
           <span className="emoji">e</span>
           <span className="emoji">e</span>
           <span className="emoji">m</span>
-          <span className="emoji">.</span>
+          <span className="emoji">.</span>  
+        </Link>
         </h1>
         <div>
           <Hamburger
             size={30}
             distance="lg"
-            duration="0.5"
+            duration="0.9"
             rounded
             toggled={!render}
             toggle ={ ontoggle }/>
@@ -46,18 +50,3 @@ const Header = () => {
 
 export default Header
 
-
-{/* 
-function Menu() {
-  const [showMenu, setMenu] = useState();
-
-  function display() {
-    const setMenu = () => {
-      let toggle = document.querySelector(".topnav");
-      if (toggle.className === "topnav") {
-        toggle.className += " responsive";
-      } else {
-        toggle.className = "topnav";
-      }
-    };
-  } */}

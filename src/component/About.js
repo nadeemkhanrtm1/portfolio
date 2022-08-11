@@ -1,5 +1,5 @@
 import React from 'react';
-import Itsme from '../images/Itsme.png'
+import Itsme from '../images/Itsme.jpg'
 import {
   FaFacebookF,
   FaInstagram,
@@ -8,7 +8,7 @@ import {
   FaTwitter,
   FaGithub
 } from "react-icons/fa"
-import {Switch, Route, Link} from 'react-router-dom'
+import {Routes, Route, Link, NavLink} from 'react-router-dom'
 import Education from "./Layouts/Education";
 import Skills from "./Layouts/Skills";
 import Experience from "./Layouts/Experience";
@@ -44,12 +44,12 @@ const About = () => {
             <img src={Itsme} alt="Nadeem Khan"/>
           </div>
           <h1>
-            <a href="https://www.linkedin.com/in/nadeemkhanrtm/" target="_nadeem" className="a"><FaLinkedin/></a>
-            <a href="https://github.com/nadeemkhanrtm1" target="_nadeem" className="a"><FaGithub/></a>
-            <a href="https://stackoverflow.com/users/11732103/nadeem-khan" target="_nadeem" className="a"><FaStackOverflow/></a>
-            <a href="https://twitter.com/nadeemkhanrtm" target="_nadeem" className="a"><FaTwitter/></a>
-            <a href="https://www.instagram.com/i_nadeemkhan/?hl=en" target="_nadeem" className="a"><FaInstagram/></a>
-            <a href="https://www.facebook.com/nadeekhanrtm" target="_nadeem" className="a"><FaFacebookF/></a>
+            <a href="https://www.linkedin.com/in/zouya-kausar-zoya-268165190/" target="_zoya" className="a"><FaLinkedin/></a>
+            <a href="https://github.com/ZoyaMew" target="_zoya" className="a"><FaGithub/></a>
+            <a href="https://stackoverflow.com/users/11732103/nadeem-khan" target="_zoya" className="a"><FaStackOverflow/></a>
+            <a href="https://twitter.com/MewZoya" target="_zoya" className="a"><FaTwitter/></a>
+            <a href="https://www.instagram.com/dazzling.zoya/" target="_zoya" className="a"><FaInstagram/></a>
+            <a href="https://www.facebook.com/nadeekhanrtm" target="_zoya" className="a"><FaFacebookF/></a>
           </h1>
         </div>
         <div className="introduction">
@@ -73,15 +73,17 @@ const About = () => {
         </div>
       </div>
       <div className="details-aboutme">
-        <Link to="/about" className="btn-2">Skills</Link>
-        <Link to="/about/experience" className="btn-3">Experience</Link>
-        <Link to="/about/education" className="btn-4">Education</Link>
+        <NavLink exact to="/about" className="btn-2" activeClassName='active-link'>Skills</NavLink>
+        <NavLink exact to="/about/experience" className="btn-3" activeClassName='active-link'>Experience</NavLink>
+        <NavLink exact to="/about/education" className="btn-4" activeClassName='active-link'>Education</NavLink>
       </div>
-      <Switch>
-        <Route exact path="/about" component={Skills}/>
-        <Route path="/about/experience" component={Experience}/>
-        <Route path="/about/education" component={Education}/>
-      </Switch>
+    
+      <Routes>
+        <Route exact path="/" element={<Skills/>}/>
+        <Route exact path="/about/experience" element={<Experience/>}/>
+        <Route exact path="/about/education" element={<Education/>}/>
+      </Routes>
+      
     </div>
   )
 }
