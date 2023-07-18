@@ -22,6 +22,12 @@ body {
   background-color: $background-color !important;
   font-family: "archia";
 }
+// button{
+//   a:active {
+//     background-color: #8ebf42;
+//     color: #666;
+//   }
+// }
 
 /*-----------------------------------------Scroll bar -----------------------------------------------------*/
 /* width */
@@ -85,10 +91,19 @@ button {
   &:hover {
     box-shadow: $inner-shadow;
   }
+  
+ 
   @media screen and (max-width: $sm) {
     font-size: 0.8rem;
     padding: 10px;
   }
+}
+.active-link{
+  color: #fa7896;
+  // background-color: #888;
+  box-shadow: $inner-shadow;
+  font-weight: 500;
+
 }
 
 .mailsend{
@@ -202,15 +217,16 @@ button {
 /*********---------------------------------Header-----------------------------------------------**********/
 
 header {
-  height: 80px;
+  height: 65px;
   line-height: 80px;
-  padding: 0 5%;
+  margin: 10px 2%;
   position: relative;
   color: $pink;
   nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 0px auto;
     align-items: center;
     h1 {
       letter-spacing: 5px;
@@ -218,7 +234,7 @@ header {
       font-size: 3rem;
       margin-bottom: 0 !important;
       @media screen and (max-width: $sm) {
-        font-size: 2rem;
+        font-size: 1.8rem;
       }
       span {
         color: $darkred;
@@ -227,14 +243,14 @@ header {
   }
 }
 
-/**========================================== Navbar Items ===========================================******/
+/**==================================== Navbar Items ===========================================******/
 
 .navbar {
   position: absolute;
-  width: calc(100vw - 10%);
+  width: calc(100vw - 5%);
   height: calc(100vh - 80px);
   background-color: $background-color;
-  z-index: 99999;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -244,7 +260,7 @@ header {
     display: inline-block;
     text-decoration: none;
     color: $pink;
-    padding: 0 30px;
+    padding: 0 15px;
     border-radius: 40px;
     box-shadow: $outer-shadow;
     font-size: 2rem;
@@ -255,23 +271,23 @@ header {
   }
 }
 
-/*========================================== Home Page =====================================================*/
+/*===================================== Home Page =====================================================*/
 
 .image-container {
   position: relative;
   top: 50%;
-  padding-top: 30px;
+  padding-top: 10px;
   width: 100%;
   text-align: center;
   .inner-shadow {
     display: inline-block;
     border-radius: 50%;
-    padding: 20px;
+    padding: 10px;
     box-shadow: $inner-shadow;
     img {
       border-radius: 50%;
       box-shadow: $outer-shadow;
-      width: 400px;
+      width: 340px;
       cursor: pointer;
       transition: 0.25s all;
       @media screen and (max-width: $sm) {
@@ -281,7 +297,9 @@ header {
   }
   .short-intro {
     h3 {
-      font-size: 3rem;
+      font-size: 2rem;
+        padding-top: 10px;
+
       @media screen and (max-width: $md) {
         padding-bottom: 20px;
         font-size: 2.5rem;
@@ -293,7 +311,8 @@ header {
       }
     }
     h1 {
-      font-size: 4rem;
+      font-size: 2.8rem;
+      padding:-5px 0px ;
       @media screen and (max-width: $md) {
         padding-bottom: 20px;
         font-size: 2rem;
@@ -304,7 +323,8 @@ header {
       }
     }
     h2 {
-      font-size: 3rem;
+      font-size: 2rem;
+      margin-bottom: 20px;
       @media screen and (max-width: $md) {
         padding-bottom: 20px;
         font-size: 2rem;
@@ -317,11 +337,11 @@ header {
     .btn-1 {
       text-align: center;
       div {
-        margin-top: 20px;
-        margin-bottom: 10px;
+        margin-top: 5px;
+        margin-bottom: 20px;
         display: inline-block;
-        width: 300px;
-        height: 80px;
+        width: 280px;
+        height: 50px;
         border-radius: 40px;
         box-shadow: $outer-shadow;
         transition: 0.5s;
@@ -332,10 +352,9 @@ header {
         button {
           color: $pink;
           border: none;
-          width: 300px;
-          height: 80px;
-          margin: 0;
-          padding: 20px 30px;
+          width: 280px;
+          height: 50px;
+          margin-bottom: 20px;
           border-radius: 40px;
           font-size: 2rem;
           transition: 0.5s;
@@ -356,7 +375,7 @@ header {
   }
 }
 
-/*========================================= Rubber Band Animation =========================================*/
+/*======================================= Rubber Band Animation ==============================================*/
 
 .emoji {
   animation-duration: 1s;
@@ -492,7 +511,7 @@ header {
     .introduction {
       flex: 4;
       padding: 0 20px 20px 20px;
-      font-size: 1.8rem;
+      font-size: 1.6rem;
       text-align: justify;
       @media screen and (max-width: $md) {
         padding: 0 10px 10px 10px;

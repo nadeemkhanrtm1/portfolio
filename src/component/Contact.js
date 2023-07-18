@@ -3,9 +3,9 @@ import {IoMdCall, IoMdMail} from 'react-icons/io';
 import {GoLocation} from "react-icons/go";
 import emailjs from "emailjs-com";
 
-const API_KEY = process.env.REACT_APP_API_KEY;
-const SERVICE_KEY = process.env.REACT_APP_SERVICE_ID;
-const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
+const API_KEY = "user_y5BOqp4dGHEX5NMsjzkzk"
+const SERVICE_KEY = "service_aphd4ot";
+const TEMPLATE_ID = "template_esf0c24";
 const Contact = () => {
   const [email,
     setEmail] = useState();
@@ -36,6 +36,7 @@ const Contact = () => {
         setName('');
         setMessage('');
         setFailed(true);
+        console.log(error)
       });
   }
 
@@ -43,7 +44,7 @@ const Contact = () => {
     setEmail(e.target.value)
   }
 
-  const onChangeName = (e) => {
+  const onChangeName = (e)  => {
     setName(e.target.value)
   }
 
